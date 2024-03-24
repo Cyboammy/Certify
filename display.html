@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
-    <link rel="stylesheet" href="../css/display.css">
+    <link rel="stylesheet" href="display.css">
  </head>
  <body>
     <section class="icon">
-    <button type="button"><img src="../Images/icons8-menu-50.png" alt="" width="35px" height="35px" id="btn"></button>
+    <button type="button"><img src="icons8-menu-50.png" alt="" width="35px" height="35px" id="btn"></button>
     </section>
     
     <nav id="menu-bar">
@@ -41,7 +41,7 @@
  <td> <?php echo $row['name']; ?> </td>
  <td> <?php echo $row['date']; ?> </td>
  <td> <?php echo $row['address']; ?></td>
- <td><img src='../php/uploads/<?php echo $row['image'];?>' width='100px' height='60px' alt='uploads'></td><td><a href='../php/certificate.php?s_no=<?php echo $row['s_no'];?>'id='certificate' target='_blank' rel='noopener noreferrer'>Click here</a></td></tr>
+ <td><img src='<?php echo $row['image'];?>' width='100px' height='60px' alt='uploads'></td><td><a href='../php/certificate.php?s_no=<?php echo $row['s_no'];?>'id='certificate' target='_blank' rel='noopener noreferrer'>Click here</a></td></tr>
 <?php }?>
          </tbody>
     </table>
